@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f2f3;
+    font-family: "Poppins", sans-serif;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 5vw;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.site-logo {
+    height: 60px;
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.main-navigation {
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+}
+
+.nav-link {
+    font-size: 19px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0167BE;
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, #a5c4ff 0%, #0167BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.icon-exchange {
+    height: 30px;
+}
+
+.exchange-info,
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#exchange-value,
+#weather-temp {
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-navigation {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-logo {
+        height: 40px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    #exchange-value,
+    #weather-temp {
+        font-size: 14px;
+    }
+}
+
+.imagem-tirinha {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0;
+    height: 28vh;
+}
+
+.container-tira{
+    border-radius: 20px;
+    background-color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 4vw;
+    margin-left: auto;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    margin-right: 0.5vw;
+}
+
+.row-tirinhas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4vh;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+#right{
+    font-size: 20px;
+}
+
+.paginaatual{
+    color: #008c57;
+    font-weight: 600;
+}
+#clima {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    font-family: "Inter", sans-serif;
+    margin-top: 1vh;
+    margin-left: 3vh;
+    margin-left: auto;
+}
+
+#cotacao {
+    gap: 10px;
+    font-family: "Inter", sans-serif;
+    margin-left: 3vh;
+    margin-top: 1vh;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.action-icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.liked {
+  color: red;
+}
+
+.saved {
+  color: gold;
+}
+
+.icone-cotacao {
+    height: 30px;
+}
+.imagem-tirinha2{
+    height: 18vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.container-tira2{
+    border-radius: 20px;
+    background-color: white;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 4vw;
+    margin-left: auto;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    margin-right: 0.5vw;
+    margin-top: 1vh;
+}
+.logo2 {
+    height: 160px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 40px 5vw;
+  margin-top: 6vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.logo2 {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.copy {
+  color: #999;
+  font-size: 13px;
+}
+
+.footer1 {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+
+.footer2 {
+  flex: 2;
+  min-width: 250px;
+}
+
+.text-footer {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer3 {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.links-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.links-footer li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.links-footer li a:hover {
+  color: #00bcd4;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icone-rede-social {
+  height: 22px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icone-rede-social:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.semestilo {
+    all: unset;
+    cursor: pointer;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cade o Jornal?</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&family=IBM+Plex+Serif:wght@100..700&family=Nunito+Sans:wght@200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./Imagens/icone-site.png" type="image/png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-left">
+            <img src="./Imagens/logo.png" class="site-logo" alt="Logo do Jornal Bagual" />
+            <nav class="main-navigation">
+                <a href="#" class="nav-link active">Notícias</a>
+                <a href="./Páginas/festas.html" class="nav-link">Festas</a>
+                <a href="./Páginas/tirinhas.html" class="nav-link">Tirinhas</a>
+                <a href="./Páginas/cultura.html" class="nav-link">Cultura</a>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <div class="exchange-info">
+                <img src="./Imagens/eua.png" class="icon-exchange" alt="Ícone dólar" />
+                <span id="exchange-value">Carregando...</span>
+            </div>
+            <div class="weather-info">
+                <span class="weather-icon">🔄</span>
+                <span id="weather-temp">Carregando...</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <article class="featured-news">
+            <div class="news-image">
+                <img src="./Imagens/Noticia-principal.jpg" alt="Imagem da notícia principal" />
+            </div>
+
+            <div class="news-details">
+                <span class="news-category">Destaque</span>
+
+                <a href="./Páginas/news1.html" class="news-link">
+                    <h2 class="news-title">
+                        Rio Grande do Sul registra a segunda morte por chikungunya da história do Estado
+                    </h2>
+                    <p class="news-subtitle">
+                        O Cevs (Centro Estadual de Vigilância em Saúde) confirmou na terça-feira (22) a segunda
+                        morte por chikungunya da história no Rio Grande do Sul. A vítima é um morador de Carazinho, de
+                        87 anos, com comorbidades. O município já havia registrado, no início de abril, a primeira morte
+                        pela doença no Estado.
+                        <span class="news-more">Clique aqui e saiba mais</span>
+                    </p>
+                </a>
+
+                <div class="news-meta">
+                    <span class="news-time">Há 2 horas</span>
+                    <span class="news-author">Por Sophia Lima • 4 min de leitura</span>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="news-banner">
+        <div class="news-banner__content">
+            <p class="news-banner__label">Notícia Urgente</p>
+            <p class="news-banner__headline">Irã lança mísseis contra hospital em Tel Aviv</p>
+        </div>
+    </div>
+
+    <div class="news-categories">
+        <div class="news-categories__list">
+            <p class="news-categories__item" data-filter="Ultimas">Últimas Notícias</p>
+            <p class="news-categories__item" data-filter="Educacao">Educação</p>
+            <p class="news-categories__item" data-filter="Saude">Saúde</p>
+            <p class="news-categories__item" data-filter="Meio Ambiente">Meio Ambiente</p>
+            <p class="news-categories__item" data-filter="Tecnologia">Tecnologia</p>
+        </div>
+        <div class="news-categories__menu">
+            <span class="material-icons">menu_open</span>
+        </div>
+    </div>
+
+    <div class="news-section">
+        <div class="news-grid">
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+        </div>
+
+
+        <div class="news-grid">
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="news-section__more">
+        <button class="news-section__button" id="load-more">Ver Mais</button>
+    </div>
+
+
+    <div class="news-section">
+        <div class="news-grid" style="display: none;">
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+        </div>
+
+
+        <div class="news-grid" style="display: none;">
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <a href="./Páginas/news1.html" class="news-card__link">
+                    <img src="./Imagens/notícia11.png" class="news-card__image"
+                        alt="RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros em 2025" />
+                    <h3 class="news-card__title">RS é o segundo estado brasileiro que mais recebeu turistas estrangeiros
+                        em 2025</h3>
+                    <p class="news-card__subtitle">Estado quase dobrou o número de visitantes de fora do país nos
+                        primeiros cinco meses do ano. Confira o que no Rio Grande do Sul atrai visitantes.</p>
+                    <div class="news-card__meta">
+                        <span class="news-card__time">Há 6 horas</span>
+                        <span class="news-card__author">Sophia Lima | 9 min de leitura</span>
+                    </div>
+                </a>
+                <div class="news-card__actions">
+                    <i class="material-icons action-icon" data-action="like">favorite_border</i>
+                    <i class="material-icons action-icon" data-action="save">bookmark_border</i>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="news-section">
+        <p class="curiosidades">Curiosidades</p>
+        <div class="curiosidades__carousel">
+            <button class="carousel__control carousel__control--left">
+                <span class="material-icons">arrow_back</span>
+            </button>
+
+            <div class="carousel__card">
+                <img src="./Imagens/curiosidade2.png" alt="Imagem curiosidade" class="carousel__image" />
+
+                <div class="carousel__content">
+                    <h3 class="carousel__headline">Cidade catarinense tem o maior número de sobrenomes alemães do Brasil
+                    </h3>
+                    <p class="carousel__text">
+                        A cidade de Pomerode, em Santa Catarina, chama atenção por manter viva a herança cultural
+                        germânica.
+                        Com cerca de 90% da população descendente de alemães, o município preserva tradições, idioma e
+                        culinária típicos.
+                        Além disso, é o local com a maior concentração de sobrenomes alemães do país, como Schmidt,
+                        Müller e Becker, atraindo turistas e estudiosos da genealogia.
+                    </p>
+                </div>
+            </div>
+
+            <button class="carousel__control carousel__control--right">
+                <span class="material-icons">arrow_forward</span>
+            </button>
+        </div>
+
+        <div class="carousel__indicators">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer1">
+                <img src="./Imagens/logojornal.png" class="logo2" alt="Logo" />
+                <p class="copy">© 2025 | Cadê o Jornal</p>
+            </div>
+
+            <div class="footer2">
+                <p class="text-footer">
+                    Este site foi desenvolvido como parte de um trabalho escolar, com o objetivo de
+                    apresentar e explorar conteúdos relacionados à região Sul do Brasil. Todos os
+                    direitos reservados ao projeto acadêmico.
+                </p>
+            </div>
+
+            <div class="footer3">
+                <ul class="links-footer">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Coupons</a></li>
+                </ul>
+                <div class="flex-footer">
+                    <a href="#"><img src="./Imagens/facebook.png" alt="Facebook" class="icone-rede-social" /></a>
+                    <a href="#"><img src="./Imagens/instagram.png" alt="Instagram" class="icone-rede-social" /></a>
+                    <a href="#"><img src="./Imagens/x.png" alt="X" class="icone-rede-social" /></a>
+                    <a href="#"><img src="./Imagens/threads.png" alt="Threads" class="icone-rede-social" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

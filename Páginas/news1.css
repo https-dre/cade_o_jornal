@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f2f3;
+    font-family: "Poppins", sans-serif;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 5vw;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.site-logo {
+    height: 60px;
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.main-navigation {
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+}
+
+.nav-link {
+    font-size: 19px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-link:hover {
+    color: #0167BE;
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, #a5c4ff 0%, #0167BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.icon-exchange {
+    height: 30px;
+}
+
+.exchange-info,
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#exchange-value,
+#weather-temp {
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-navigation {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-logo {
+        height: 40px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    #exchange-value,
+    #weather-temp {
+        font-size: 14px;
+    }
+}
+
+.news-hero {
+    background: #007BD3;
+    padding: 40px 20px 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.news-title {
+    color: #fff;
+    font-size: clamp(22px, 3vw, 36px);
+    font-weight: bold;
+    max-width: 800px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
+}
+
+.news-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+.news-image {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    filter: brightness(80%);
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+.news-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sidebar-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status-green,
+.status-orange {
+    width: 16px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.status-green {
+    background: #15c36f;
+}
+
+.status-orange {
+    background: #eb681e;
+}
+
+.status-divider {
+    width: 2px;
+    height: 15px;
+    background: #000;
+    border-radius: 2px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.action-btn:hover {
+    transform: scale(1.2);
+}
+
+.action-btn .material-icons {
+    font-size: 24px;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.news-subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.news-paragraph {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+    margin:0;
+}
+
+.news-tag {
+    background: #ffdfc2;
+    color: #BF622C;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.author-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.author-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    width: 90%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.author-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.author-info {
+    flex: 1;
+}
+
+.author-role {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+.author-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.author-bio {
+    font-size: 14px;
+    color: #444;
+}
+
+.follow-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #efbfbe;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.follow-btn:hover {
+    background: #ffe6e6;
+}
+
+.twitter-logo {
+    width: 20px;
+}
+
+@media (max-width: 900px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-sidebar {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .author-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 40px 5vw;
+  margin-top: 6vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.logo2 {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.copy {
+  color: #999;
+  font-size: 13px;
+}
+
+.footer1 {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+
+.footer2 {
+  flex: 2;
+  min-width: 250px;
+}
+
+.text-footer {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer3 {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.links-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.links-footer li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.links-footer li a:hover {
+  color: #00bcd4;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icone-rede-social {
+  height: 22px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icone-rede-social:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.semestilo {
+    all: unset;
+    cursor: pointer;
+}
+
