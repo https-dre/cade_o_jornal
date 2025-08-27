@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Título da Notícia</title>
+    <title>{title}</title>
     <link rel="stylesheet" href="../css/noticia1.css" type="text/css" />
     <link rel="stylesheet" href="../media.css" type="text/css" />
 
-    <!--Aqui eu copiei o header de um dos files-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -60,17 +59,19 @@
     </header>
 
     <div class="fundo2">
-      <h1>Título da Notícia</h1>
+      <h1>{title}</h1>
     </div>
     <!--Aqui temos as coisas importantes da notícia-->
     <div class="imagemcont">
-      <img src="../assets/noticia1.jpg" alt="Imagem da notícia" />
+      <img src="{image}" alt="Imagem da notícia" />
     </div>
     <main class="main">
       <div class="context">
         <div class="info">
-          <span>Por: Pessoa nome | 4 min de leitura</span>
+          <span>Por: {author} | {readtime} min de leitura</span>
         </div>
+
+        <p>{paragraph}</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -116,14 +117,12 @@
           </p>
         </div>
 
-        <!--Aqui podemos colocar os links das redes sociais da Etec-->
         <div class="footerlinks">
           <a href="#"
             ><img src="../assets/instagram.png" height="50px" alt="Logo Insta"
           /></a>
         </div>
       </div>
-      <!--Colocamos os nomes de quem fez, sla-->
       <div class="footerbaixo">
         <p>© 2025 | Cadê o jornal? - Etec Taboão da Serra</p>
       </div>
