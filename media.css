@@ -1,12 +1,17 @@
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   html {
     margin: 0px;
     padding: 0px;
   }
   
   body {
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    width: 100%;
+    align-self: center;
+  }
+
+  header {
+    width: 100%;
   }
 
   .carousel__control, .carousel__control--right, .carousel__control--left {
@@ -16,6 +21,9 @@
   .news-banner__content {
     align-self: center;
     align-items: center;
+    max-width: 300px;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   .news-banner__label {
@@ -32,5 +40,21 @@
     white-space: nowrap;
     align-self: center;
     display: none;
+  }
+
+  .news-image {
+    height: min-content;
+  }
+
+  .featured-news {
+    align-self: center;
+  }
+
+  .news-grid {
+    margin: 0 auto;
+  }
+
+  .imagemcont > img {
+    max-width: 90%;
   }
 }
