@@ -15,7 +15,10 @@ body {
 }
 
 p {
-  width: 50vw;
+  max-width: 50vw;
+  word-wrap: break-word;  /* faz a quebra se a palavra for muito longa */
+  overflow-wrap: break-word; /* forma moderna do mesmo comportamento */
+  white-space: normal;    /* garante que o texto vai quebrar normalmente */
 }
 
 .site-logo {
