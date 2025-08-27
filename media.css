@@ -1,0 +1,36 @@
+@media (max-width: 400px) {
+  html {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .carousel__control, .carousel__control--right, .carousel__control--left {
+    display: none;
+  }
+
+  .news-banner__content {
+    align-self: center;
+    align-items: center;
+  }
+
+  .news-banner__label {
+    display: none;
+  }
+
+  .news-banner__content > p {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .news-categories {
+    overflow-x: auto;
+    white-space: nowrap;
+    align-self: center;
+    display: none;
+  }
+}
