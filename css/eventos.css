@@ -274,6 +274,7 @@ body {
 }
 
 .event-card {
+    max-width: 400px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
