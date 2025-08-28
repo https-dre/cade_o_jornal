@@ -55,6 +55,10 @@
   }
 
   .imagemcont > img {
-    max-width: 50%;
+    max-width: 50vw;
+  }
+
+  .fundo2 > h1 {
+    
   }
 }
