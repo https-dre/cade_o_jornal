@@ -1,3 +1,4 @@
+html,
 body {
     margin: 0;
     padding: 0;
@@ -546,22 +547,6 @@ body {
     }
 }
 
-footer {
-    background-color: #1a1a1a;
-    padding: 40px 5vw;
-    margin-top: 6vh;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
 .logo2 {
     height: 100px;
     margin-bottom: 10px;
@@ -570,55 +555,6 @@ footer {
 .copy {
     color: #999;
     font-size: 13px;
-}
-
-.footer1 {
-    flex: 1;
-    min-width: 180px;
-    text-align: center;
-}
-
-.footer2 {
-    flex: 2;
-    min-width: 250px;
-}
-
-.text-footer {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #ccc;
-}
-
-.footer3 {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-}
-
-.links-footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 15px;
-}
-
-.links-footer li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.links-footer li a:hover {
-    color: #00bcd4;
-}
-
-.flex-footer {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
 }
 
 .icone-rede-social {
@@ -640,13 +576,14 @@ footer {
 
 /* Footer - Reutilizado */
 footer {
+    margin-top: 20px;
     background-color: #111;
     color: #ccc;
     padding: 40px 20px 20px;
+    /*border: 10px solid green;*/
 }
 
 .footer-cont {
-    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
